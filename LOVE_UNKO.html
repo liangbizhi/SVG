@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LOVE_UNKO - とくだゆき</title>
+	<style type="text/css">
+	html,body,p{margin: 0;padding: 0;}
+	svg{display: block; margin: 50px auto 0 auto;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;transition:all .5s ease;}
+	svg:hover{box-shadow: 0 0 3px 3px #ddd;}
+	.info{text-align: center;background-color: #c1fff4;box-shadow: 0 1px 3px 3px #ddd;}
+	</style>
+</head>
+<body>
+	<div class="info">
+		<p>View me on <a href="https://github.com/liangbizhi/SVG">GitHub</a></p>
+		<p>Works originate from 德田有希(とくだゆき)</p>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+		<!-- backgournd -->
+		<rect x="0" y="0" width="512" height="512" fill="#c1fff4"/>
+		
+		<g id="txt" stroke="#a4481c" stroke-width="3">
+			<!-- LOVE -->
+			<g id="left-txt">
+				<defs>
+					<mask id="o-mask">
+						<circle cx="85" cy="209" r="43" fill="white"/>
+						<circle cx="87" cy="214" r="16" fill="black"/>
+					</mask>
+					<g id="o-letter">
+						<circle cx="85" cy="209" r="40" fill="#ffbb70" mask="url(#o-mask)"/>
+						<circle cx="87" cy="214" r="16" fill="transparent"/>
+					</g>
+				</defs>
+				<polygon points="72 29 110 38 100 95 146 108 135 159 46 132" fill="#fe9f6f"/>
+				<use xlink:href="#o-letter"/>
+				<polygon points="14 292 38 272 64 300 80 267 113 279 84 342 61 346" fill="#ffdf6d"/>
+				<polygon points="23 398 79 372 93 396 58 414 61 424 90 414 97 432 70 446 74 454 98 446 108 468 49 486" fill="#ffdf6d"/>
+			</g>
+			<!-- UNKO -->
+			<g id="right-txt">
+				<path d="M 364 43 L 395 35 L 405 71 A 13 13 0 0 0 432 65 L 430 30 L 456 28 L 465 72 C 465 130 385 130 371 88 L 364 43" fill="#f9ff6f"/>
+				<polygon points="390 149 427 155 443 196 450 153 491 161 470 250 425 235 413 215 410 238 373 231" fill="#ffdf6d"/>
+				<polygon points="382 280 412 270 422 294 442 269 464 287 450 317 472 337 457 356 430 339 432 361 401 366" fill="#ffbb70"/>
+				<use xlink:href="#o-letter" transform="translate(360,220)"/>
+			</g>
+		</g>
+		<!-- person -->
+		<g stroke="#a4481c" stroke-width="3" transform="rotate(-7) translate(-30,39)">
+			<g id="body">
+				<path d="M 133 512 C 160 340 230 460 245 406 C 290 430 340 400 333 512" fill="#fee5b3"/>
+				<path d="M 309 476 C 305 480 305 510 305 512 M 168 463 C 173 460 170 480 164 512" fill="transparent"/>
+			</g>
+			<g id="face">
+				<!-- face -->
+				<path d="M 245 435 C 82 428 82 155 244 153 C 402 142 402 445 245 435" fill="#fee5b3"/>
+				<!-- eyes -->
+				<circle cx="182" cy="292" r="3" fill="#a4481c" />
+				<circle cx="300" cy="292" r="3" fill="#a4481c" />
+				<!-- mouth -->
+				<g id="mouth">
+					<defs>
+						<clipPath id="tongue">
+							<path d="M 197 355 C 190 423 300 423 289 355"/>
+						</clipPath>
+					</defs>
+					<path d="M 197 355 C 190 425 300 425 289 355" fill="#fe9cbe"/>
+					<path d="M 208 394 C 220 380 265 380 279 394 L 245 450 L 208 394" fill="#ffd5e3" clip-path="url(#tongue)"/>
+					<line x1="195" y1="355" x2="290" y2="355"/>
+				</g>
+			</g>
+			<g id="hand" fill="#fee5b3">
+				<!-- fill background -->
+				<path d="M 115 512 L 152 512 L 143 402 L 114 411 L 90 432 L 115 484" stroke-width="0"/>
+
+				<path d="M 148 415 L 146 365 A 8 8 0 0 0 130 365 L 132 398 A 3 3 0 0 1 124 398 L 109 368 A 4 4 0 0 0 98 375 L 114 411 M 115 512 L 115 484 C 110 480 108 470 99 455 L 90 432 A 6 6 0 0 1 105 423 L 113 434 A 6 6 0 0 1 103 440 L 97 433 M 105 423 A 6 6 0 0 1 116 413 L 125 428 A 6 6 0 0 1 113 434 M 152 512 C 152 500 150 480 161 460 C 165 445 170 410 127 415 A 6 6 0 0 0 130 430 A 19 24 0 0 0 143 427 A 35 35 0 0 0 146 446"/>
+				
+			</g>
+		</g>
+		<!-- assistant -->
+		<!-- <path d="M 125 0 l 0 512 M 163 0 l 0 512 M 0 413 l 512 0" stroke="#0efefe"/> -->
+	</svg>
+</body>
+</html>
