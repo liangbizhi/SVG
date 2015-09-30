@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/**
+ * This is the stylesheet for kamamon! Your browser must support CSS3 for perfect effect.
+ * If you like it, you could star the project on my github.
+ * @author: liangbizhi
+ * @email: liangbizhi1993@gmail.com
+ * @github: http://github.com/liangbizhi/
+ * @website: http://liangbizhi.github.io/
+ *
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 300px;
+  margin: 300px auto 0 auto;
+}
+
+/* head */
+.head {
+  position: relative;
+  background-color: black;
+  width: 300px;
+  height: 200px;
+  -webkit-border-top-left-radius: 142px;
+          border-top-left-radius: 142px;
+  -webkit-border-top-right-radius: 140px;
+          border-top-right-radius: 140px;
+}
+
+/* ears */
+.ears {
+  position: relative;
+}
+.ears .left, .ears .right {
+  position: absolute;
+  z-index: -1;
+  top: 12px;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border: 12px solid black;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.ears .left {
+  left: -8px;
+}
+.ears .right {
+  left: 250px;
+}
+
+/* eyes */
+.eyes {
+  position: relative;
+}
+.eyes .left, .eyes .right {
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  background-color: white;
+}
+.eyes .left {
+  left: 48px;
+  top: 55px;
+  /* 眉毛 */
+}
+.eyes .left:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: 19px;
+  height: 13px;
+  border: 5px solid black;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.eyes .left:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: -27px;
+  border-top: 7px solid white;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 40px;
+  height: 31px;
+  -webkit-animation: 5s eyebrows 1s ease infinite;
+          animation: 5s eyebrows 1s ease infinite;
+}
+.eyes .right {
+  left: 192px;
+  top: 55px;
+  /* 眉毛 */
+}
+.eyes .right:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: 19px;
+  height: 13px;
+  border: 5px solid black;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.eyes .right:before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: -27px;
+  border-top: 7px solid white;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 40px;
+  height: 31px;
+  -webkit-animation: 5s eyebrows 1s ease infinite;
+          animation: 5s eyebrows 1s ease infinite;
+}
+
+/* mouth wrapper */
+.mouth-wrapper {
+  width: 160px;
+  height: 125px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 102px;
+  margin-left: -80px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  /* mouth */
+}
+.mouth-wrapper .nouse-top, .mouth-wrapper .nouse-bottom {
+  position: absolute;
+  width: 45px;
+  left: 50%;
+  margin-left: -22.5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.mouth-wrapper .nouse-top {
+  height: 10px;
+  border-top: 20px solid black;
+  top: 5px;
+}
+.mouth-wrapper .nouse-bottom {
+  border-bottom: 19px solid black;
+  height: 19px;
+}
+.mouth-wrapper .mouth {
+  position: absolute;
+  left: 50%;
+  margin-left: -71px;
+  width: 142px;
+  border-top: 30px solid black;
+  top: 51px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-animation: 5s mouth 1s ease infinite;
+          animation: 5s mouth 1s ease infinite;
+}
+
+/* ka wa ii red dots */
+.red-dots {
+  position: relative;
+}
+.red-dots .left, .red-dots .right {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  background-color: red;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  top: 112px;
+}
+.red-dots .left {
+  left: -25px;
+}
+.red-dots .right {
+  left: 250px;
+}
+
+/* body */
+.body {
+  position: absolute;
+  z-index: -1;
+  height: 524px;
+  top: -2px;
+  left: -32px;
+  border: 182px solid black;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.body:after {
+  content: '';
+  width: 397px;
+  height: 405px;
+  position: absolute;
+  background-color: white;
+  top: 300px;
+  left: -200px;
+}
+
+/* arms */
+.arms {
+  position: relative;
+}
+.arms .left, .arms .right {
+  position: absolute;
+  top: 53px;
+  width: 210px;
+  height: 95px;
+  -webkit-border-radius: 56px;
+          border-radius: 56px;
+  background-color: black;
+}
+.arms .left {
+  -webkit-transform-origin: right center;
+      -ms-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-animation: 5s left-arm 1s ease infinite;
+          animation: 5s left-arm 1s ease infinite;
+  -webkit-transform: rotate(52deg);
+      -ms-transform: rotate(52deg);
+          transform: rotate(52deg);
+  left: -163px;
+}
+.arms .right {
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-animation: 5s right-arm 1s ease infinite;
+          animation: 5s right-arm 1s ease infinite;
+  -webkit-transform: rotate(-52deg);
+      -ms-transform: rotate(-52deg);
+          transform: rotate(-52deg);
+  left: 263px;
+}
+
+/* background */
+.bg {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  left: 0;
+  top: 0;
+}
+.bg .title {
+  position: absolute;
+  font-size: 40px;
+  left: 50%;
+  top: 180px;
+  margin-left: -140px;
+  font-family: '微软雅黑';
+}
+.bg .bg-one {
+  background-color: #f3ebc1;
+  height: 48px;
+}
+.bg .bg-two {
+  background-color: #ebe6cc;
+  height: 40px;
+}
+.bg .bg-three {
+  background-color: #cdd1b9;
+  height: 161px;
+}
+.bg .bg-four {
+  background-color: #e1df8f;
+  height: 145px;
+}
+.bg .bg-five {
+  background-color: #d3c68c;
+  height: 178px;
+}
+.bg .bg-six {
+  background-color: #c8dc3f;
+  height: 170px;
+}
+
+/* animation */
+@-webkit-keyframes left-arm {
+  10%, 50% {
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+  }
+  30%, 70% {
+    -webkit-transform: rotate(56deg);
+            transform: rotate(56deg);
+  }
+  75%, 85%, 95% {
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+  }
+  80%, 90%, 98% {
+    -webkit-transform: rotate(56deg);
+            transform: rotate(56deg);
+  }
+}
+@keyframes left-arm {
+  10%, 50% {
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+  }
+  30%, 70% {
+    -webkit-transform: rotate(56deg);
+            transform: rotate(56deg);
+  }
+  75%, 85%, 95% {
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+  }
+  80%, 90%, 98% {
+    -webkit-transform: rotate(56deg);
+            transform: rotate(56deg);
+  }
+}
+@-webkit-keyframes right-arm {
+  10%, 50% {
+    -webkit-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+  }
+  30%, 70% {
+    -webkit-transform: rotate(-56deg);
+            transform: rotate(-56deg);
+  }
+  75%, 85%, 95% {
+    -webkit-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+  }
+  80%, 90%, 98% {
+    -webkit-transform: rotate(-56deg);
+            transform: rotate(-56deg);
+  }
+}
+@keyframes right-arm {
+  10%, 50% {
+    -webkit-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+  }
+  30%, 70% {
+    -webkit-transform: rotate(-56deg);
+            transform: rotate(-56deg);
+  }
+  75%, 85%, 95% {
+    -webkit-transform: rotate(-48deg);
+            transform: rotate(-48deg);
+  }
+  80%, 90%, 98% {
+    -webkit-transform: rotate(-56deg);
+            transform: rotate(-56deg);
+  }
+}
+/* eyebrows */
+@-webkit-keyframes eyebrows {
+  50% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+    top: -25px;
+  }
+}
+@keyframes eyebrows {
+  50% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+    top: -25px;
+  }
+}
+/* mouth */
+@-webkit-keyframes mouth {
+  75% {
+    border-top: 24px solid black;
+  }
+}
+@keyframes mouth {
+  75% {
+    border-top: 24px solid black;
+  }
+}
